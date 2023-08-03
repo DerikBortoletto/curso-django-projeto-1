@@ -22,3 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('recipes/', include('recipes.urls')),
 ]
+
+admin.site.site_header = "TITAKU 0"
+admin.site.index_title = "SAKO"
