@@ -10,9 +10,3 @@ def home(request):
     })
 
 
-def contact(request):
-    return render(request, 'recipes/contact.html')
-
-
-def about(request):
-    return HttpResponse('ABOUT')
