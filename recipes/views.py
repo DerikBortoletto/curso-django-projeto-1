@@ -5,11 +5,13 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'recipes/home.html')
+    return render(request, 'recipes/home.html', {
+        'name': 'Derik Bortoletto'
+    })
 
 
 def contact(request):
-    return HttpResponse('CONTACT')
+    return render(request, 'recipes/contact.html')
 
 
 def about(request):
